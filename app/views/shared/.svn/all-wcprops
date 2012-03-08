@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/haven/!svn/ver/1/trunk/app/views/shared
+END
+_credentials.html.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/haven/!svn/ver/1/trunk/app/views/shared/_credentials.html.rb
+END
+_header.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/haven/!svn/ver/4/trunk/app/views/shared/_header.html.erb
+END
+_userinfo.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/haven/!svn/ver/4/trunk/app/views/shared/_userinfo.html.erb
+END
+_footer.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/haven/!svn/ver/4/trunk/app/views/shared/_footer.html.erb
+END
+_dashboard_header.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/haven/!svn/ver/4/trunk/app/views/shared/_dashboard_header.html.erb
+END
+_list_directory.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/haven/!svn/ver/4/trunk/app/views/shared/_list_directory.html.erb
+END
+_yui_tree.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/haven/!svn/ver/1/trunk/app/views/shared/_yui_tree.html.erb
+END

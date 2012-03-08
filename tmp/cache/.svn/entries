@@ -1,0 +1,60 @@
+9
+
+dir
+3
+http://odeubu1.myvnc.com/svn/haven/trunk/tmp/cache
+http://odeubu1.myvnc.com/svn/haven
+
+
+
+2010-03-30T20:28:03.019092Z
+1
+dlredden
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b66001ad-05c1-436c-bb28-3c2a7d5c64e5
+
+index.html-gzip-5031638-7385-1229483574
+file
+
+
+
+
+2010-03-30T20:30:44.000000Z
+f3fc3a53036fc7d50c92d82903f9d1f9
+2010-03-30T20:28:03.019092Z
+1
+dlredden
+has-props
+
+javascripts
+dir
+
+stylesheets
+dir
+
+index.html-gzip-5104742-7385-1245162559
+file
+
+
+
+
+2010-03-30T20:30:44.000000Z
+44d8b5ec7a00ad256c6af736b1f11ed5
+2010-03-30T20:28:03.019092Z
+1
+dlredden
+has-props
+

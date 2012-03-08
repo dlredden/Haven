@@ -1,0 +1,13 @@
+<div id="file1" class="file-container">
+	<div class="file-icon">
+		<%= image_tag(file.file_type.image, {:alt => "#{file.file_type.type_name} File", :title => "#{file.file_type.type_name} File"}) %>	
+	</div>
+	<div class="<%= (file.is_saved) ? 'file-save-hidden' : 'file-save-visible' %>">
+		<%= image_tag("10x10_save.gif") %>
+	</div>
+	<div class="file-name">
+		<%= link_to_remote(file.name, :url=> {:controller => "active_files", :action => "open", :id => file.id}) %>
+	</div>
+	<div class="file-path"><%= file.path %></div>
+</div>
+<div class="clear"></div>

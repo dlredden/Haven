@@ -1,0 +1,4 @@
+<div id="<%= tree_id %>"></div>
+<% javascript_tag do -%>
+	YAHOO.util.Event.addListener("dom:loaded", "load", buildYUITreeView("<%= tree_id %>", <%= data %>));
+<% end -%>

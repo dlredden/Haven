@@ -1,0 +1,206 @@
+// Place your application-specific JavaScript functions and classes here
+// This file is automatically included by javascript_include_tag :defaults
+
+function editFile(data)
+{
+	var bespin = document.getElementById("editor").bespin;
+	bespin.value = data;
+}
+
+function saveFile()
+{
+	var bespin = document.getElementById("editor").bespin;
+	// Make some Ajax call to send the text to the server in order to save it.
+	//bespin.value;
+}
+
+function saveAllFiles()
+{
+	//Get the reference so activeX or Plugin. flexApp is id/name of OBJECT/EMBED tags
+	var flashObject  = thisMovie("WikidEditor");
+	flashObject.saveAllFiles();
+}
+
+function copy()
+{
+	//Get the reference so activeX or Plugin. flexApp is id/name of OBJECT/EMBED tags
+	var flashObject  = thisMovie("WikidEditor");
+	flashObject.copy();
+}
+
+function cut()
+{
+	//Get the reference so activeX or Plugin. flexApp is id/name of OBJECT/EMBED tags
+	var flashObject  = thisMovie("WikidEditor");
+	flashObject.cut();
+}
+
+function paste()
+{
+	//Get the reference so activeX or Plugin. flexApp is id/name of OBJECT/EMBED tags
+	var flashObject  = thisMovie("WikidEditor");
+	flashObject.paste();
+}
+
+//this function return to Flash ActiveX Object or Plugin depending upon browser
+//it takes care for browser type and returns the proper reference.
+//Accepts the id or name of <OBJECT> or <EMBED> tag respectively
+//source taken from: www.moock.org
+function thisMovie(movieName)
+{
+    // IE and Netscape refer to the movie object differently.
+    // This function returns the appropriate syntax depending on the browser.
+    if (navigator.appName.indexOf ("Microsoft") !=-1)
+    {
+		return window[movieName];
+    }
+    else
+    {
+		return window.document[movieName];
+    }
+}
+
+function buildYUITreeView(treeId, treeData)
+{
+	var tree = new YAHOO.widget.TreeView(treeId);
+	addYUITreeViewChildNodes(0, 0, tree.getRoot(), treeData);
+	tree.subscribe("clickEvent",
+		function(oArgs)
+		{
+			if (oArgs.node.isLeaf)
+			{
+				openFile(oArgs.node.label, oArgs.node.data.projectId, oArgs.node.data.fullFileName);
+			}
+		}
+	);
+	tree.render();
+	
+	function addYUITreeViewChildNodes(currLevel, nodeIndex, parent, treeData)
+	{
+		var lastNode;
+		var level = currLevel;
+		while (nodeIndex < treeData.length)
+		{
+			level = treeData[nodeIndex];
+			if (level == currLevel)
+			{
+				nodeIndex++;
+				lastNode = new YAHOO.widget.TextNode(treeData[nodeIndex++], parent);
+			}
+			else if (level < currLevel)
+			{
+				return nodeIndex;
+			}
+			else
+			{
+				nodeIndex = addYUITreeViewChildNodes(level, nodeIndex, lastNode, treeData);
+			}
+		}
+		
+		return nodeIndex;
+	}
+}
+
+function loadNodeData(node, fnLoadComplete)  {
+    
+    //We'll create child nodes based on what we get back when we
+    //use Connection Manager to pass the text label of the 
+    //expanding node to the Yahoo!
+    //Search "related suggestions" API.  Here, we're at the 
+    //first part of the request -- we'll make the request to the
+    //server.  In our Connection Manager success handler, we'll build our new children
+    //and then return fnLoadComplete back to the tree.
+    
+    //Get the node's label and urlencode it; this is the word/s
+    //on which we'll search for related words:
+    var nodeLabel = encodeURI(node.label);
+    
+    //prepare URL for XHR request:
+    var sUrl = "assets/ysuggest_proxy.php?query=" + nodeLabel;
+    
+    //prepare our callback object
+    var callback = {
+    
+        //if our XHR call is successful, we want to make use
+        //of the returned data and create child nodes.
+        success: function(oResponse) {
+            YAHOO.log("XHR transaction was successful.", "info", "example");
+            console.log(oResponse.responseText);
+            var oResults = eval("(" + oResponse.responseText + ")");
+            if((oResults.ResultSet.Result) && (oResults.ResultSet.Result.length)) {
+                //Result is an array if more than one result, string otherwise
+                if(YAHOO.lang.isArray(oResults.ResultSet.Result)) {
+                    for (var i=0, j=oResults.ResultSet.Result.length; i<j; i++) {
+                        var tempNode = new YAHOO.widget.TextNode(oResults.ResultSet.Result[i], node, false);
+                    }
+                } else {
+                    //there is only one result; comes as string:
+                    var tempNode = new YAHOO.widget.TextNode(oResults.ResultSet.Result, node, false)
+                }
+            }
+                                
+            //When we're done creating child nodes, we execute the node's
+            //loadComplete callback method which comes in via the argument
+            //in the response object (we could also access it at node.loadComplete,
+            //if necessary):
+            oResponse.argument.fnLoadComplete();
+        },
+        
+        //if our XHR call is not successful, we want to
+        //fire the TreeView callback and let the Tree
+        //proceed with its business.
+        failure: function(oResponse) {
+            YAHOO.log("Failed to process XHR transaction.", "info", "example");
+            oResponse.argument.fnLoadComplete();
+        },
+        
+        //our handlers for the XHR response will need the same
+        //argument information we got to loadNodeData, so
+        //we'll pass those along:
+        argument: {
+            "node": node,
+            "fnLoadComplete": fnLoadComplete
+        },
+        
+        //timeout -- if more than 7 seconds go by, we'll abort
+        //the transaction and assume there are no children:
+        timeout: 7000
+    };
+    
+    //With our callback object ready, it's now time to 
+    //make our XHR call using Connection Manager's
+    //asyncRequest method:
+    YAHOO.util.Connect.asyncRequest('GET', sUrl, callback);
+}
+
+function pageWidth() {return window.innerWidth != null ? window.innerWidth : document.documentElement && document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body != null ? document.body.clientWidth : null;}
+				
+function pageHeight() {return  window.innerHeight != null? window.innerHeight : document.documentElement && document.documentElement.clientHeight ?  document.documentElement.clientHeight : document.body != null? document.body.clientHeight : null;}
+
+function posLeft() {return typeof window.pageXOffset != 'undefined' ? window.pageXOffset :document.documentElement && document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ? document.body.scrollLeft : 0;}
+
+function posTop() {return typeof window.pageYOffset != 'undefined' ?  window.pageYOffset : document.documentElement && document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ? document.body.scrollTop : 0;}
+
+function posRight() {return posLeft()+pageWidth();} function posBottom() {return posTop()+pageHeight();}
+
+function setBespinSize(object_name)
+{
+	var element = document.getElementById(object_name);
+	
+	var windowWidth=pageWidth()*.75-5;
+	var windowHeight=pageHeight()-80;
+	var headerHeight=document.getElementById("header").style.height;
+	var footerHeight=document.getElementById("footer").style.height;
+	var sidebarWidth=document.getElementById("project_info").style.width;
+	
+	element.style.width=windowWidth-sidebarWidth+"px";
+	element.style.height=windowHeight-headerHeight-footerHeight+"px";
+	
+	setTimeout('resetBespinDimensions('+object_name+')', 200);
+}
+
+function resetBespinDimensions(element)
+	{
+		var env = element.bespin;
+		env.dimensionsChanged();
+	}

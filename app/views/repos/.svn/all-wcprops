@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/haven/!svn/ver/1/trunk/app/views/repos
+END
+repo_credentials.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/haven/!svn/ver/1/trunk/app/views/repos/repo_credentials.html.erb
+END

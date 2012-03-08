@@ -1,0 +1,4 @@
+<div id=<%="project_selector_#{project.id}"%> >
+	<div id="buttons"></div>
+	<%= link_to(project.name, :controller => "projects", :action => "show", :id => project.id) %>
+</div>

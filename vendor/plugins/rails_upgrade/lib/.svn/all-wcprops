@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade/lib
+END
+gemfile_generator.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade/lib/gemfile_generator.rb
+END
+rails_upgrade.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade/lib/rails_upgrade.rb
+END
+new_configuration_generator.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade/lib/new_configuration_generator.rb
+END
+application_checker.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade/lib/application_checker.rb
+END
+routes_upgrader.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade/lib/routes_upgrader.rb
+END

@@ -1,0 +1,12 @@
+<% @page_title = "Dashboard" -%>
+
+<div id="project_actions" class="right dynamic-height">
+	
+</div>
+<div id="projects_listing">
+	<ul>
+		<% @projects.each do |_project| %>
+			<li><%= render(:partial => 'project_selector', :locals => {:project => _project})%></li>
+		<% end %>
+	</ul>
+</div>

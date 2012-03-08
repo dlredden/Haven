@@ -1,0 +1,27 @@
+/*
+ * Sticky Footer Solution
+ * by Steve Hatcher
+ * http://stever.ca
+ * http://www.cssstickyfooter.com
+*/ 
+
+#footer
+{
+	position: relative;
+	margin-top: -20px; /* negative value of footer height */
+	height: 20px;
+	background-color:#808080;
+	clear:both;
+}
+
+/* IMPORTANT
+
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
+
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+
+*/

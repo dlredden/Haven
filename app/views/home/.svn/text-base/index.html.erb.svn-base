@@ -1,0 +1,4 @@
+<div id="top" class="page-wrap">
+	<h2>Coding made easier from anywhere</h2>
+	<%= link_to('Login', :controller => :login) %>
+</div>

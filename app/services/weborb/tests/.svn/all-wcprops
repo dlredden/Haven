@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/haven/!svn/ver/1/trunk/app/services/weborb/tests
+END
+FlexRemotingTest.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/haven/!svn/ver/1/trunk/app/services/weborb/tests/FlexRemotingTest.rb
+END
+PrimitiveArrayTest.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/haven/!svn/ver/1/trunk/app/services/weborb/tests/PrimitiveArrayTest.rb
+END
+MultipleArgsTest.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/haven/!svn/ver/1/trunk/app/services/weborb/tests/MultipleArgsTest.rb
+END
+PrimitiveTest.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/haven/!svn/ver/1/trunk/app/services/weborb/tests/PrimitiveTest.rb
+END
+StringsArrayTest.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/haven/!svn/ver/1/trunk/app/services/weborb/tests/StringsArrayTest.rb
+END
+StringsTest.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/haven/!svn/ver/1/trunk/app/services/weborb/tests/StringsTest.rb
+END
+ComplexTypesTest.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/haven/!svn/ver/1/trunk/app/services/weborb/tests/ComplexTypesTest.rb
+END

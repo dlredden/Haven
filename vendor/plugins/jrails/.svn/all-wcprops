@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/jrails
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/jrails/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/jrails/Rakefile
+END
+README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/jrails/README.rdoc
+END
+VERSION.yml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/jrails/VERSION.yml
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/jrails/init.rb
+END
+jrails.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/jrails/jrails.gemspec
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/jrails/CHANGELOG
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/jrails/install.rb
+END

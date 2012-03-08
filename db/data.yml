@@ -1,0 +1,508 @@
+
+--- 
+accounts: 
+  columns: 
+  - id
+  - name
+  - subdomain
+  - created_at
+  - updated_at
+  - plan_id
+  - payment_profile_id
+  - cc_number
+  - cc_last_four_digits
+  - cc_exp_month
+  - cc_exp_year
+  - cc_name_on_card
+  - billed_on_day
+  records: 
+  - - "1"
+    - WikidLabs, LLC
+    - odeubu1
+    - 2009-06-18 21:48:23
+    - 2009-06-18 21:48:23
+    - "2"
+    - 1234abcd
+    - "0"
+    - "6789"
+    - "1"
+    - "2011"
+    - Joe Blow
+    - "12"
+
+--- 
+apphosts: 
+  columns: 
+  - id
+  - hostname
+  - homedir
+  - hosttranstype
+  - created_at
+  - updated_at
+  records: 
+  - - "2"
+    - odeubu1.myvnc.com
+    - /home/gmlaws/wikidcode
+    - SFTP
+    - 2009-06-23 04:19:15
+    - 2009-06-23 04:19:15
+
+--- 
+fileactivities: 
+  columns: 
+  - id
+  - file_name
+  - full_file_name
+  - project_id
+  - user_id
+  - touched_at
+  - is_saved
+  - is_committed
+  - is_published
+  records: 
+  - - "8"
+    - editor_helper.rb
+    - /s3/123456/1/wikidcode/app/helpers/editor_helper.rb
+    - "1"
+    - "3"
+    - 2009-08-12 16:48:23
+    - t
+    - t
+    - t
+  - - "9"
+    - Rakefile
+    - /s3/123456/1/wikidcode/Rakefile
+    - "1"
+    - "3"
+    - 2009-08-10 01:10:14
+    - t
+    - t
+    - t
+  - - "10"
+    - README
+    - /s3/123456/1/wikidcode/README
+    - "1"
+    - "3"
+    - 2009-08-10 01:10:15
+    - t
+    - t
+    - t
+  - - "11"
+    - application.rb
+    - /s3/123456/1/wikidcode/app/controllers/application.rb
+    - "1"
+    - "3"
+    - 2009-08-29 02:10:09
+    - t
+    - t
+    - t
+  - - "12"
+    - clients_controller.rb
+    - /s3/123456/1/wikidcode/app/controllers/clients_controller.rb
+    - "1"
+    - "3"
+    - 2009-08-29 02:10:19
+    - t
+    - t
+    - t
+  - - "13"
+    - menu.erb
+    - /s3/123456/1/wikidcode/app/views/clients/menu.erb
+    - "1"
+    - "3"
+    - 2009-08-29 02:05:57
+    - t
+    - t
+    - t
+  - - "14"
+    - application.rb
+    - /s3/123456/1/wikidcode/app/controllers/application.rb
+    - "1"
+    - "2"
+    - 2009-08-10 01:41:26
+    - t
+    - t
+    - t
+  - - "15"
+    - users_controller.rb
+    - /s3/123456/1/wikidcode/app/controllers/users_controller.rb
+    - "1"
+    - "2"
+    - 2009-08-10 01:41:22
+    - t
+    - t
+    - t
+  - - "16"
+    - schema.rb
+    - /s3/123456/1/wikidcode/db/schema.rb
+    - "1"
+    - "2"
+    - 2009-08-10 01:41:25
+    - t
+    - t
+    - t
+  - - "17"
+    - environment.rb
+    - /s3/123456/1/wikidcode/config/environment.rb
+    - "1"
+    - "3"
+    - 2009-08-11 19:32:29
+    - t
+    - t
+    - t
+  - - "18"
+    - user.rb
+    - /s3/123456/1/wikidcode/app/models/user.rb
+    - "1"
+    - "3"
+    - 2009-08-13 20:17:12
+    - t
+    - t
+    - t
+  - - "19"
+    - schema.rb
+    - /s3/123456/1/wikidcode/db/schema.rb
+    - "1"
+    - "3"
+    - 2009-08-12 04:21:23
+    - t
+    - t
+    - t
+  - - "20"
+    - application.rb
+    - /s3/123456/1/wikidcode2/app/controllers/application.rb
+    - "2"
+    - "3"
+    - 2009-08-13 20:17:18
+    - t
+    - t
+    - t
+
+--- 
+plans: 
+  columns: 
+  - id
+  - name
+  - created_at
+  - updated_at
+  - price
+  - is_active
+  records: 
+  - - "1"
+    - Personal
+    - 2009-06-18 21:34:25
+    - 2009-06-18 21:34:25
+    - "10"
+    - false
+  - - "2"
+    - Basic
+    - 2009-06-18 21:34:25
+    - 2009-06-18 21:34:25
+    - "20"
+    - true
+  - - "3"
+    - Basic Plus
+    - 2009-06-18 21:34:25
+    - 2009-06-18 21:34:25
+    - "40"
+    - false
+  - - "4"
+    - Premier
+    - 2009-06-18 21:34:25
+    - 2009-06-18 21:34:25
+    - "60"
+    - false
+  - - "5"
+    - Premier Plus
+    - 2009-06-18 21:34:25
+    - 2009-06-18 21:34:25
+    - "120"
+    - false
+  - - "6"
+    - Enterprise
+    - 2009-06-18 21:34:25
+    - 2009-06-18 21:34:25
+    - "200"
+    - false
+
+--- 
+projects: 
+  columns: 
+  - id
+  - name
+  - local_path
+  - account_id
+  - repo_id
+  - apphostdev_id
+  - apphosttest_id
+  - apphostprod_id
+  records: 
+  - - "1"
+    - Wikidcode
+    - /s3/123456/1/wikidcode
+    - "1"
+    - 
+    - 
+    - 
+    - 
+  - - "2"
+    - Wikidcode 2
+    - /s3/123456/1/wikidcode2
+    - "1"
+    - 
+    - 
+    - 
+    - 
+  - - "3"
+    - WikidCode 3
+    - /s3/123456/1/wikidcode3
+    - "1"
+    - 
+    - 
+    - 
+    - 
+  - - "4"
+    - New Project
+    - /s3/123456/1/newproject
+    - "1"
+    - "29"
+    - "2"
+    - 
+    - 
+
+--- 
+repo_types: 
+  columns: 
+  - id
+  - name
+  - created_at
+  - updated_at
+  - active
+  records: 
+  - - "1"
+    - FTP
+    - 
+    - 
+    - true
+  - - "2"
+    - SFTP
+    - 
+    - 
+    - true
+  - - "3"
+    - Subversion
+    - 
+    - 
+    - false
+  - - "4"
+    - Git
+    - 
+    - 
+    - false
+  - - "5"
+    - Mercurial
+    - 
+    - 
+    - false
+
+--- 
+repos: 
+  columns: 
+  - id
+  - url
+  - repo_type
+  records: 
+  - - "1"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails
+    - "3"
+  - - "2"
+    - ""
+    - "3"
+  - - "3"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails
+    - "3"
+  - - "4"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails
+    - "3"
+  - - "5"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails
+    - "3"
+  - - "6"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails
+    - "3"
+  - - "7"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails
+    - "3"
+  - - "8"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails
+    - "3"
+  - - "9"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails
+    - "3"
+  - - "10"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails
+    - "3"
+  - - "11"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails
+    - "3"
+  - - "12"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails
+    - "3"
+  - - "13"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/trunk
+    - "3"
+  - - "14"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/trunk
+    - "3"
+  - - "15"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/trunk
+    - "3"
+  - - "16"
+    - http://odewebware-svn.cvsdude.com
+    - "3"
+  - - "17"
+    - http://odewebware-svn.cvsdude.com
+    - "3"
+  - - "18"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/trunk
+    - "3"
+  - - "19"
+    - http://odewebware-svn.cvsdude.com
+    - "3"
+  - - "20"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/trunk
+    - "3"
+  - - "21"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/trunk
+    - "3"
+  - - "22"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/fs_in_database
+    - "3"
+  - - "23"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/branches/fs_in_database
+    - "3"
+  - - "24"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/branches/fs_in_database
+    - "3"
+  - - "25"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/branches/fs_in_database
+    - "3"
+  - - "26"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/branches/fs_in_database
+    - "3"
+  - - "27"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/branches/fs_in_database
+    - "3"
+  - - "29"
+    - http://odewebware-svn.cvsdude.com/trunk/wikidcode_rails/branches/fs_in_database
+    - "3"
+
+--- 
+selectvalues: 
+  columns: 
+  - id
+  - value
+  - value2
+  - key
+  records: 
+  - - "1"
+    - FTP
+    - 
+    - hosttranstypes
+  - - "2"
+    - SFTP
+    - 
+    - hosttranstypes
+  - - "3"
+    - 01 - January
+    - "1"
+    - ccmonthdropdown
+  - - "4"
+    - 02 - February
+    - "2"
+    - ccmonthdropdown
+  - - "5"
+    - 03 - March
+    - "3"
+    - ccmonthdropdown
+  - - "6"
+    - 04 - April
+    - "4"
+    - ccmonthdropdown
+  - - "7"
+    - 05 - May
+    - "5"
+    - ccmonthdropdown
+  - - "8"
+    - 06 - June
+    - "6"
+    - ccmonthdropdown
+  - - "9"
+    - 07 - July
+    - "7"
+    - ccmonthdropdown
+  - - "10"
+    - 08 - August
+    - "8"
+    - ccmonthdropdown
+  - - "11"
+    - 09 - September
+    - "9"
+    - ccmonthdropdown
+  - - "12"
+    - 10 - October
+    - "10"
+    - ccmonthdropdown
+  - - "13"
+    - 11 - November
+    - "11"
+    - ccmonthdropdown
+  - - "14"
+    - 12 - December
+    - "12"
+    - ccmonthdropdown
+
+--- 
+users: 
+  columns: 
+  - id
+  - username
+  - hashed_password
+  - first_name
+  - last_name
+  - email
+  - display_name
+  - user_level
+  - salt
+  - account_id
+  records: 
+  - - "1"
+    - admin
+    - 408ef8e7015ce19591624476ecd703c2d0fad688
+    - Admin
+    - User
+    - greg@odeit.com
+    - Admin User
+    - "9"
+    - 6ef4f9dc87e1988cde44f521ded9bd57f54a706b
+    - "1"
+  - - "2"
+    - gmlaws
+    - d078211eee5b5c01b10e1606ab3a0d778092d344
+    - Greg
+    - Laws
+    - greg@odeit.com
+    - Greg Laws
+    - "9"
+    - f6ab5f1cc5220a34477e4600a3be159363f08275
+    - "1"
+  - - "3"
+    - dlredden
+    - 0f55d6b2659f6c452a2113e1a1ac4fb7408668d6
+    - DL
+    - Redden
+    - dlredden@odeit.com
+    - DL Redden
+    - "9"
+    - 0d2c32744fb757ace9f12bafcf9e2b875089de53
+    - "1"

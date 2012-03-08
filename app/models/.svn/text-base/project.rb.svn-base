@@ -1,0 +1,69 @@
+class Project < ActiveRecord::Base
+	has_many :active_files, :order => "touched_at DESC", :dependent => :destroy
+  belongs_to :account
+  belongs_to :repository
+  
+  attr_reader :project_path
+  
+  def project_path()
+    "/s3/#{self.account_id.to_s}/#{current_user()}/#{self.name.gsub(/\s+/, '')}"
+  end
+  
+  # This method will loop through the files and directories in a directory and return
+  # a string representation of the data structure that the YUI Treeview requires.
+  #
+  # If recursive is set to true then it will traverse the entire directory tree otherwise
+  # only the node_path specified is returned.
+  #
+  # If depth is set then the recursive calles will only go down #{depth} levels, i.e.
+  # a depth of 1 will only return the node_path entries and the files/directories one level down.
+  def get_directory_contents_recursively(node_path, level, recursive = true, depth = -1)
+    @ret = ""
+    @excludes = [".", "..", ".svn"] # Ignore these files and directories
+  
+    if (!FileTest.directory?(node_path.to_s) || File.fnmatch(".*", node_path.to_s))
+      raise(ArgumentError, "Value must be a directory")
+    else
+      Dir.entries(node_path).sort.each { |file|
+        next if (@excludes.include?(file))
+  
+        @full_path = node_path.to_s + "/" + file.to_s
+  
+        @ret += "#{level},{"
+        @ret += "label: '#{file}'"
+        @ret += ",fullFileName: '#{@full_path}'"
+        @ret += ",projectId: '#{self.id}'"
+        @ret += ",filePath: '#{node_path}'"
+        @ret += ",expanded: false"
+  
+        if (FileTest.directory?(@full_path))
+          @ret += ",isLeaf: false},"
+          
+          if (recursive)
+            unless (depth == 0)
+              @ret += get_directory_contents_recursively(@full_path, level + 1, recursive, depth - 1)
+            end
+          end
+        else
+          @fileExtension = File.extname(file)
+          
+          if (@fileExtension == "")
+            @fileExtention = "txt"
+          end
+          
+          @ret += ",labelStyle: 'icon-#{@fileExtention}'"
+          @ret += ",isLeaf: true},"
+        end
+      }
+      @ret
+    end
+  end
+    
+  def get_directory_contents(mypath, level, recursive = true, depth = -1)
+    @returnval = "["
+    @returnval += get_directory_contents_recursively(mypath, level, recursive, depth)
+    @returnval.chop! # Remove the trailing comma
+    @returnval += "]"
+    @returnval
+  end
+end

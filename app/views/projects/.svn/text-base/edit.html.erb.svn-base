@@ -1,0 +1,2 @@
+<% @page_title = @current_project.name + "(Edit)-%>
+

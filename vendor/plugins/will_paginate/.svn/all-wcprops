@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/will_paginate
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/will_paginate/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/will_paginate/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/will_paginate/init.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/will_paginate/README
+END

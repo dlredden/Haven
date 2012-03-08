@@ -1,0 +1,9 @@
+<% @user = User.find(current_user) %>
+
+<div id="userinfocontainer">
+	<ul id="userinfo">
+		<li><%=@user.full_name%></li>
+		<li><%= link_to("My Account", :controller => "accounts", :action => "show", :id => @user.accounts.first.id ) %></li>
+		<li><%= link_to("Log-out", :controller => "clients", :action => "logout") %></li>
+	</ul>
+</div>

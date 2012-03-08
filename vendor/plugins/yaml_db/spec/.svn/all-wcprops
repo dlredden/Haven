@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/yaml_db/spec
+END
+yaml_dump_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/yaml_db/spec/yaml_dump_spec.rb
+END
+base.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/yaml_db/spec/base.rb
+END
+yaml_load_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/yaml_db/spec/yaml_load_spec.rb
+END
+yaml_utils_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/yaml_db/spec/yaml_utils_spec.rb
+END

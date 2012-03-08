@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/will_paginate/test/lib
+END
+activerecord_test_connector.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/will_paginate/test/lib/activerecord_test_connector.rb
+END
+load_fixtures.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/will_paginate/test/lib/load_fixtures.rb
+END

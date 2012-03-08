@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/haven/!svn/ver/1/trunk/app/views/accounts
+END
+new.erb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/haven/!svn/ver/1/trunk/app/views/accounts/new.erb
+END
+_account_details.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/haven/!svn/ver/1/trunk/app/views/accounts/_account_details.erb
+END
+show.erb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/haven/!svn/ver/1/trunk/app/views/accounts/show.erb
+END
+_billing_details.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/haven/!svn/ver/1/trunk/app/views/accounts/_billing_details.erb
+END

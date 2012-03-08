@@ -1,0 +1,73 @@
+<% @page_title = "Signup" -%>
+
+<%= error_messages_for(:account) %>
+<%= error_messages_for(:user) %>
+ 
+<div id="signup" class="signup">
+	<% form_tag(:action => "create") do %>
+		<%= hidden_field(:account, :plan_id) %>
+			<h2>Let's create your account</h2>
+			<hr class="signup"/>
+			<div class="signup_directions">
+				First you need to create an administrator account. This will be the primary user account for your company. You may add other users according to your plan after your site is configured.
+			</div>
+			<p>
+			  <b>First Name</b>&nbsp;
+			  <%= text_field(:user, :first_name) %>
+			</p>
+			<p>
+			  <b>Last Name</b>&nbsp;
+			  <%= text_field(:user, :last_name) %>
+			</p>
+			<p>
+			  <b>Email Address</b>&nbsp;
+			  <%= text_field(:user, :email) %>
+			</p>
+			<p>
+			  <b>User Name</b>&nbsp;
+			  <%= text_field(:user, :username) %>
+			</p>
+			<p>
+			  <b>Password</b>&nbsp;
+			  <%= password_field(:user, :password) %><br/>
+			</p>
+			<p>
+			  <b>Re-enter password</b>&nbsp;
+			  <%= password_field(:user, :password_confirmation) %>
+			</p>
+			<hr class="signup"/>
+			<div class="signup_directions">
+				Now tell us your company name and choose a subdomain.
+			</div>
+			<p>
+			  <b>Company Name</b>&nbsp;
+			  <%= text_field(:account, :name) %>
+			</p>
+			<p>
+			  <b>Subdomain</b>&nbsp;
+			  <%= text_field(:account, :subdomain, :size => "15") %>.wikidcode.com
+			</p>
+			<hr class="signup"/>
+			<div class="signup_directions">
+				Finally provide your billing information.
+				<span class="highlight">You will not be billed if you close your account before your 30-day trial period ends.</span>
+				However, we need to verify that your method of payment is valid prior to setting up your account.
+			</div>
+			<p>
+			  <b>Card Number</b>&nbsp;
+			  <%= text_field(:account, :cc_number) %>
+			</p>
+			<p>
+			  <b>Name on card</b>&nbsp;
+			  <%= text_field(:account, :cc_name_on_card) %>
+			</p>
+			<p>
+			  <b>Expiration Date</b>&nbsp;
+			  	<%= select_tag("account[cc_exp_month]", options_from_collection_for_select(@ccmonths,'value2','value', Date.today.month.to_s)) %>
+				<%= collection_select(:account, :cc_exp_year, @yearsCollection, :id, :value) %>
+			</p>
+			<p>
+			  <%= submit_tag("Create Account") %>
+			</p>
+	<% end %>
+</div>

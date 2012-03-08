@@ -1,0 +1,194 @@
+div.file-container
+{
+	width:100%;
+	height:38px;
+	margin-bottom: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+div.file-container-selected
+{
+	width:100%;
+	height:38px;
+	margin-bottom: 2px;
+	background-color:#ef4e59;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+div.file-icon
+{
+	float:left;
+	margin: 0px;
+	padding: 2px;
+	padding-left:0px;
+}
+
+div.file-save-hidden
+{
+	position:absolute;
+	visibility:hidden;
+	float:left;
+	margin: 0px;
+	padding: 2px;
+	padding-left:0px;
+}
+
+div.file-save-visible
+{
+	position:absolute;
+	visibility:visible;
+	float:left;
+	margin: 0px;
+	padding: 2px;
+	padding-left:0px;
+}
+
+div.file-name
+{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: .8em;
+	font-weight:bold;
+	color:#313131;
+}
+
+div.file-name a
+{
+	font:inherit;
+	color:inherit;
+	text-decoration:none;
+}
+
+div.file-name a:hover
+{
+	font:inherit;
+	color:inherit;
+	text-decoration:underline;
+}
+
+div.file-path
+{
+	margin-left: 20px;
+	font-family: Helvetica, Arial, sans-serif;
+	/*font-style:italic;*/
+	font-size: .7em;
+	color:#919191;
+}
+
+div#project_info
+{
+	background: #7ddd89;
+	width: 300px;
+}
+
+div#editor_container
+{
+	height: 550px;
+	width: 650px;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:1.1em;
+	min-width: 512px;
+	min-height: 384px;
+	background:#d0d0d0;
+}
+
+div#project_tree
+{
+	height: 300px;;
+	overflow: auto;
+}
+
+div#recent_files_view
+{
+	height: 100px;
+	overflow: auto;
+}
+
+div#editor_outer
+{
+	width:100%;
+	height:100%;
+}
+
+div#editor_left
+{
+	float:left;
+	min-width:640px;
+	padding: 5px;
+}
+
+div#editor_right
+{
+	float:right;
+	width:290px;
+	height:100%;
+	margin-top:5px;
+	margin-right:5px;
+}
+
+#projects_listing
+{
+	padding: 40px 0 0 20px;
+}
+
+#projects_listing ul
+{
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	color:#414141;
+}
+
+#projects_listing li
+{
+	padding-bottom: 5px;
+}
+
+#projects_listing li a
+{
+	text-decoration: none;
+	color:#414141;
+}
+
+div#fileopscontainer
+{
+	width:100%;
+	height:30px;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+ul#fileopsmenu
+{
+	margin-left: 0;
+	padding-left: 0;
+	white-space: nowrap;
+}
+
+#fileopsmenu li
+{
+	display: inline;
+	list-style-type: none;
+}
+
+#fileopsmenu a {
+	padding: 3px 10px;
+}
+
+#fileopsmenu a:link, #fileopsmenu a:visited {
+	background-color: #333333;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#fileopsmenu a:hover {
+	background-color: #808080;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+div#project_dialog
+{
+	text-align: center;
+	width: 500px;
+}

@@ -1,0 +1,2 @@
+page.replace_html("project_name", @current_project.name)
+page << "buildYUITreeView('project_tree', #{@project_tree_data})"

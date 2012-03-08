@@ -1,0 +1,22 @@
+<div class="file-container" style="background-color:#ff0000;">
+	<div class="inner-file">
+		<%= image_tag("48x48_ruby_icon.png") %>	
+	</div>
+	<div class="file-name">account.rb</div>
+	<div class="file-path">/app/models</div>
+</div>
+<div class="file-container" style="background-color:#ff0000;">
+	<div class="inner-file">
+		<%= image_tag("48x48_ruby_icon.png") %>	
+	</div>
+	<div class="file-name">_recent_active_file.html.erb</div>
+	<div class="file-path">/app/views/editor</div>
+</div>
+<div class="file-container">
+	<div class="inner-file">
+		<%= image_tag("48x48_ruby_icon.png") %>	
+	</div>
+	<div class="file-name">accounts_controller.rb</div>
+	<div class="file-path">/app/accounts</div>
+</div>
+<div class="clear"></div>

@@ -1,0 +1,10 @@
+<% @page_title = "Account Details for #{@account.name}" -%>
+
+<%= content_tag('p', link_to('&laquo; Back', :controller => 'clients', :action => 'menu')) %>
+
+<div class="account_details">
+	<h3>Account Details</h3>
+        <%= render(:partial => "billing_details", :locals => {:account => @account}) %>
+	<hr/>
+        <%= render(:partial => "account_details", :locals => {:account => @account}) %>
+</div>

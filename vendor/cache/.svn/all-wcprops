@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/haven/!svn/ver/4/trunk/vendor/cache
+END
+actionpack-3.0.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/haven/!svn/ver/4/trunk/vendor/cache/actionpack-3.0.1.gem
+END
+rack-1.2.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/haven/!svn/ver/4/trunk/vendor/cache/rack-1.2.1.gem
+END
+aws-s3-0.6.2.gem
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/haven/!svn/ver/4/trunk/vendor/cache/aws-s3-0.6.2.gem
+END
+ruby-debug-0.10.3.gem
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/haven/!svn/ver/4/trunk/vendor/cache/ruby-debug-0.10.3.gem
+END
+strongbox-0.4.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/haven/!svn/ver/4/trunk/vendor/cache/strongbox-0.4.1.gem
+END
+treetop-1.4.8.gem
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/haven/!svn/ver/4/trunk/vendor/cache/treetop-1.4.8.gem
+END
+rake-0.8.7.gem
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/haven/!svn/ver/4/trunk/vendor/cache/rake-0.8.7.gem
+END
+columnize-0.3.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/haven/!svn/ver/4/trunk/vendor/cache/columnize-0.3.1.gem
+END
+xml-simple-1.0.12.gem
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/haven/!svn/ver/4/trunk/vendor/cache/xml-simple-1.0.12.gem
+END
+actionmailer-3.0.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/haven/!svn/ver/4/trunk/vendor/cache/actionmailer-3.0.1.gem
+END
+activesupport-3.0.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/haven/!svn/ver/4/trunk/vendor/cache/activesupport-3.0.1.gem
+END
+railties-3.0.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/haven/!svn/ver/4/trunk/vendor/cache/railties-3.0.1.gem
+END
+mime-types-1.16.gem
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/haven/!svn/ver/4/trunk/vendor/cache/mime-types-1.16.gem
+END
+i18n-0.4.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/haven/!svn/ver/4/trunk/vendor/cache/i18n-0.4.1.gem
+END
+arel-1.0.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/haven/!svn/ver/4/trunk/vendor/cache/arel-1.0.1.gem
+END
+subdomain-fu-1.0.0.beta2.gem
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/haven/!svn/ver/4/trunk/vendor/cache/subdomain-fu-1.0.0.beta2.gem
+END
+activeresource-3.0.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/haven/!svn/ver/4/trunk/vendor/cache/activeresource-3.0.1.gem
+END
+builder-2.1.2.gem
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/haven/!svn/ver/4/trunk/vendor/cache/builder-2.1.2.gem
+END
+mail-2.2.7.gem
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/haven/!svn/ver/4/trunk/vendor/cache/mail-2.2.7.gem
+END
+activemodel-3.0.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/haven/!svn/ver/4/trunk/vendor/cache/activemodel-3.0.1.gem
+END
+tzinfo-0.3.23.gem
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/haven/!svn/ver/4/trunk/vendor/cache/tzinfo-0.3.23.gem
+END
+ruby-debug-base-0.10.3.gem
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/haven/!svn/ver/4/trunk/vendor/cache/ruby-debug-base-0.10.3.gem
+END
+thor-0.14.3.gem
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/haven/!svn/ver/4/trunk/vendor/cache/thor-0.14.3.gem
+END
+abstract-1.0.0.gem
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/haven/!svn/ver/4/trunk/vendor/cache/abstract-1.0.0.gem
+END
+linecache-0.43.gem
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/haven/!svn/ver/4/trunk/vendor/cache/linecache-0.43.gem
+END
+erubis-2.6.6.gem
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/haven/!svn/ver/4/trunk/vendor/cache/erubis-2.6.6.gem
+END
+rack-test-0.5.6.gem
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/haven/!svn/ver/4/trunk/vendor/cache/rack-test-0.5.6.gem
+END
+rack-mount-0.6.13.gem
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/haven/!svn/ver/4/trunk/vendor/cache/rack-mount-0.6.13.gem
+END
+polyglot-0.3.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/haven/!svn/ver/4/trunk/vendor/cache/polyglot-0.3.1.gem
+END
+rails-3.0.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/haven/!svn/ver/4/trunk/vendor/cache/rails-3.0.1.gem
+END
+activerecord-3.0.1.gem
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/haven/!svn/ver/4/trunk/vendor/cache/activerecord-3.0.1.gem
+END

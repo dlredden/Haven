@@ -1,0 +1,19 @@
+<div id="project_view" >
+	<%= content_tag(:span, @current_project.name, :id => "project_name") %>
+	
+	<%= link_to_remote("<img src='/images/trash.gif' style='cursor:pointer' id='project_#{@current_project.id}_trash_image' align='absmiddle' class='trash_image' />",
+		:url => {:controller => "projects", :action => "manage", :id => @current_project.id},
+		:method => :post,
+		:confirm => "Are you sure you want to remove project #{@current_project.name}?",
+		:loading => "Element.show('tree_indicator')",
+		:complete => "Element.hide('tree_indicator')")
+	%>
+	
+	<%=
+		if (@current_project == nil)
+			link_to("Checkout From Repository", {}, :onclick => "Modalbox.show('/repos/repo_credentials/checkout/#{@current_project.id}', { width: 600, title: 'Checkout From Repository'}); return false;")
+		else
+			render(:partial => "shared/yui_tree", :locals => {:tree_id => "project_tree", :data => @project_tree_data})
+		end
+	%>
+</div>

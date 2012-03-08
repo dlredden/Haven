@@ -1,0 +1,44 @@
+9
+
+dir
+4
+http://odeubu1.myvnc.com/svn/haven/trunk/public/javascripts/resources
+http://odeubu1.myvnc.com/svn/haven
+
+
+
+2010-11-04T01:17:27.386869Z
+4
+dlredden
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+screen_theme
+dir
+
+whitetheme
+dir
+
+completion
+dir
+

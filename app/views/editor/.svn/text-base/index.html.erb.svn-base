@@ -1,0 +1,9 @@
+<div id="editor_outer">
+	<div id="editor_right">
+		<%= render(:partial => "fileactivities/recent_active_file") %>
+	</div>
+	<div id="editor_left">
+			<%= render(:partial => 'editor') %>
+	</div>
+	<div class="clear"></div>
+</div>

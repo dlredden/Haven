@@ -1,0 +1,74 @@
+9
+
+dir
+3
+http://odeubu1.myvnc.com/svn/haven/trunk/tmp
+http://odeubu1.myvnc.com/svn/haven
+
+
+
+2010-04-06T21:11:47.743526Z
+2
+dlredden
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b66001ad-05c1-436c-bb28-3c2a7d5c64e5
+
+pids
+dir
+
+restart.txt
+file
+
+
+
+
+2010-11-01T18:38:37.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2010-04-06T21:11:47.743526Z
+2
+dlredden
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+cache
+dir
+
+sessions
+dir
+
+sockets
+dir
+

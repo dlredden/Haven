@@ -1,0 +1,117 @@
+<div class="file-container">
+	<div class="file-icon">
+		<%= image_tag("32x32_Folder_01.png", {:alt => "Folder", :title => "Folder"}) %>
+	</div>
+	<div class="file-name">
+		<%= link_to_remote("controller", :controller => "filemanager", :action => "open") %>
+	</div>
+	<div class="file-path">/app</div>
+</div>
+<div class="clear"></div>
+<div class="file-container">
+	<div class="file-icon">
+		<%= image_tag("32x32_Folder_01.png", {:alt => "Folder", :title => "Folder"}) %>
+	</div>
+	<div class="file-name">
+		<%= link_to_remote("editor", :controller => "filemanager", :action => "open") %>
+	</div>
+	<div class="file-path">/app/views</div>
+</div>
+<div class="clear"></div>
+<div class="file-container">
+	<div class="file-icon">
+		<%= image_tag("32x32_Folder_01.png", {:alt => "Folder", :title => "Folder"}) %>
+	</div>
+	<div class="file-name">
+		<%= link_to_remote("models", :controller => "filemanager", :action => "open") %>
+	</div>
+	<div class="file-path">/app</div>
+</div>
+<div class="clear"></div>
+
+
+<div id="file1" class="file-container">
+	<div class="file-icon">
+		<%= image_tag("32x32_ruby_icon.png", {:alt => "Ruby File", :title => "Ruby File"}) %>	
+	</div>
+	<div class="file-save-visible">
+		<%= image_tag("10x10_save.gif") %>
+	</div>
+	<div class="file-name">
+		<%= link_to_remote("account.rb", :controller => "filemanager", :action => "open") %>
+	</div>
+	<div class="file-path">/app/models</div>
+</div>
+<div class="clear"></div>
+
+
+<div class="file-container">
+	<div class="file-icon">
+		<%= image_tag("32x32_ruby_icon.png", {:alt => "Ruby File", :title => "Ruby File"}) %>
+	</div>
+	<div class="file-save-hidden">
+		<%= image_tag("10x10_save.gif") %>
+	</div>
+	<div class="file-name">
+		<%= link_to_remote("_recent_file_activity.html.erb", :controller => "filemanager", :action => "open") %>
+	</div>
+	<div class="file-path">/app/views/fileactivities</div>
+</div>
+<div class="clear"></div>
+
+
+<div class="file-container">
+	<div class="file-icon">
+		<%= image_tag("32x32_ruby_icon.png", {:alt => "Ruby File", :title => "Ruby File"}) %>
+	</div>
+	<div class="file-save-hidden">
+		<%= image_tag("10x10_save.gif") %>
+	</div>
+	<div class="file-name">
+		<%= link_to_remote("file_activities_controller.rb", :controller => "filemanager", :action => "open") %>
+	</div>
+	<div class="file-path">/app/controllers</div>
+</div>
+<div class="clear"></div>
+
+
+<div class="file-container">
+	<div class="file-icon">
+		<%= image_tag("32x32_ruby_icon.png", {:alt => "Ruby File", :title => "Ruby File"}) %>
+	</div>
+	<div class="file-save-visible">
+		<%= image_tag("10x10_save.gif") %>
+	</div>
+	<div class="file-name">
+		<%= link_to_remote("_recent_active_file.html.erb", :controller => "filemanager", :action => "open") %>
+	</div>
+	<div class="file-path">/app/views/fileactivities</div>
+</div>
+<div class="clear"></div>
+
+<div class="file-container">
+	<div class="file-icon">
+		<%= image_tag("32x32_unknown_file_type.png", {:alt => "Unknown File", :title => "Unknown File"}) %>
+	</div>
+	<div class="file-save-visible">
+		<%= image_tag("10x10_save.gif") %>
+	</div>
+	<div class="file-name">
+		<%= link_to_remote("text_file.tmp", :controller => "filemanager", :action => "open") %>
+	</div>
+	<div class="file-path">/tmp</div>
+</div>
+<div class="clear"></div>
+<div class="file-container">
+	<div class="file-icon">
+		<%= image_tag("32x32_unknown_file_type.png", {:alt => "Unknown File", :title => "Unknown File"}) %>
+	</div>
+	<div class="file-save-hidden">
+		<%= image_tag("10x10_save.gif") %>
+	</div>
+	<div class="file-name">
+		<%= link_to_remote("some_other_file", :controller => "filemanager", :action => "open") %>
+	</div>
+	<div class="file-path">/public</div>
+</div>
+<div class="clear"></div>

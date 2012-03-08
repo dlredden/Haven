@@ -1,0 +1,13 @@
+/*
+	This is the only file that will be included in the layouts.
+	All other CSS files should be imported using this file.
+*/
+@import "./reset.css";
+@import "./main.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./dashboard.css";
+@import "./project.css";
+@import "./BespinEmbedded.css";
+@import "./modalbox.css";
+@import "./menu_styles.css";

@@ -1,0 +1,12 @@
+<div class="billingdetails">
+	<table>
+	<tr>
+		<tr>
+			<td>Your Wikid Code site name is <span id="site_name"><%= @account.name %></span></td>
+		</tr>
+		<tr>
+			<td>Your account url is <%= link_to("https://#{@account.subdomain}.wikidcode.com", "http://#{@account.subdomain}.wikidcode.com") %></td>
+		</tr>
+	</tr>
+	</table>
+</div>

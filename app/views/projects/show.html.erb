@@ -1,0 +1,17 @@
+<% @page_title = @current_project.name -%>
+
+<div id="project_container">
+	<div id="project_info" class="right dynamic-height width-offset">
+		<div id="project_info_buttons">
+			<%= link_to_remote("Active Files", :url => {:controller => "project", :action => "show_active_files"}) %>
+			<%= link_to_remote("Tree View", :url => {:controller => "project", :action => "show_tree_view"}) %>
+		</div>
+		<%= render(:partial => "active_files/active_files", :locals => {:active_files => @active_files}) %>
+	</div>
+	<div id="editor_wrapper" class="dynamic-height dynamic-width">
+		<div id="editor_container" class="bespin">Using the stuff on the right open a file and start editing it instead of reading this garbage.</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+

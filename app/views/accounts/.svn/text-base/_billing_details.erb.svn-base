@@ -1,0 +1,17 @@
+<div class="billingdetails">
+	<table>
+	<tr>
+		<tr>
+			<td>Next Bill Date <%= h(@account.next_bill_date.strftime("%m-%d-%Y")) %></td>
+			<td>Amount to be billed $<%= h(Plan.find(@account.plan_id).price) %></td>
+		</tr>
+		<tr>
+			<td>Card on File <%= h(@account.cc_last_four_digits) %></td>
+			<td>Exp Date <%= h("%02d" % @account.cc_exp_month + "-#{@account.cc_exp_year}") %></td>
+		</tr>
+		<tr>
+			<td>The name on the card is <%= h(@account.cc_name_on_card) %></td>
+		</tr>
+	</tr>
+	</table>
+</div>

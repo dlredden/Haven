@@ -1,0 +1,5 @@
+<div class="right">
+	<%= render :partial => 'shared/userinfo'%>
+</div>
+<div><h3>Dashboard Title</h3></div>	
+<div class="clear"></div>

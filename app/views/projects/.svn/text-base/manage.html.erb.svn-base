@@ -1,0 +1,41 @@
+<div id="project_dialog" title="New Project">
+	<% form_remote_tag :url => {:controller => "projects", :action => "manage"}, :loading=>"Element.show('tree_indicator')", :complete=>"Element.hide('tree_indicator')" do %>
+	<h3 id="project_heading" align="left">Project Name</h3>
+	<table border="0" cellspacing="5" cellpadding="5" width="500">
+		<tr>
+			<td>Name: </td>
+			<td> <%=text_field :project, :name%></td>
+		</tr>
+		<tr>
+			<td>Path: </td>
+			<td> <%=text_field :project, :local_path%></td>
+		</tr>
+	</table><br>
+	<h3 id="repo_heading" align="left">Source Control</h3>
+	<table border="0" cellspacing="5" cellpadding="5" width="500">
+		<tr>
+			<td>URL:</td>
+			<td><%=text_field :repo, :url, :size => "50"%></td>
+		</tr>
+	</table><br>
+	<h3 id="repo_heading" align="left">Remote Host</h3>
+	<table border="0" cellspacing="5" cellpadding="5" width="500">
+		<tr>
+			<td>Host:</td>
+			<td><%=text_field :apphostdev, :hostname, :size => "50"%></td>
+		</tr>
+		<tr>
+			<td>Base Directory:</td>
+			<td><%=text_field :apphostdev, :homedir, :size => "50"%></td>
+		</tr>
+		<tr>
+			<% @hosttranstypes = Selectvalue.find_all_by_key("hosttranstypes") %>
+			<td>Type:</td>
+			<td><%=collection_select :apphostdev, :hosttranstype, @hosttranstypes, :value, :value%></td>
+		</tr>
+		<tr>
+			<td><%= submit_tag 'Create', :onclick => 'Modalbox.hide()' %></td>
+		</tr>
+	</table>
+	<% end %>
+</div>

@@ -1,0 +1,11 @@
+<% @page_title = 'Manage Users' -%>
+
+<%= content_tag('p', link_to('&laquo; Back', :controller => 'clients', :action => 'menu')) %>
+
+<div class="userlist left">
+	<%= render(:partial => 'listing') %>
+</div>
+<div class="userlist right">
+	Please select a user on the left or create a new user.<br />
+	<%= link_to('New user', :action => 'manage') %>
+</div>

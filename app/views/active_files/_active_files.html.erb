@@ -1,0 +1,7 @@
+<% @active_files = AccountUser.find(current_user()).get_active_files_by_project(@current_project.id) unless (@active_files) -%>
+
+<div id="active_files_container">
+	<% for _file in (@active_files) do -%>
+		<%= render(:partial => "active_files/active_file", :locals => {:file => _file}) %>
+	<% end -%>
+</div>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/haven/!svn/ver/1/trunk/app/services/weborb
+END
+FileService.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/haven/!svn/ver/1/trunk/app/services/weborb/FileService.rb
+END
+clients_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/haven/!svn/ver/1/trunk/app/services/weborb/clients_controller.rb
+END
+InfoService.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/haven/!svn/ver/1/trunk/app/services/weborb/InfoService.rb
+END

@@ -1,0 +1,8 @@
+<% @page_title = 'Client Menu' -%>
+
+<ul class="menu">
+	<li><%= link_to('Manage Projects', :controller => 'projects') %></li>
+	<li><%= link_to('Manage Account', :controller => 'accounts') %></li>
+	<li><%= link_to('Manage Users', :controller => 'users') %></li>
+	<li><%= link_to('Logout', :action => 'logout') %></li>
+</ul>

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/haven/!svn/ver/1/trunk/test/unit
+END
+client_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/haven/!svn/ver/1/trunk/test/unit/client_test.rb
+END
+file_type_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/haven/!svn/ver/4/trunk/test/unit/file_type_test.rb
+END
+filesystem_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/haven/!svn/ver/1/trunk/test/unit/filesystem_test.rb
+END
+project_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/haven/!svn/ver/1/trunk/test/unit/project_test.rb
+END
+repo_type_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/haven/!svn/ver/1/trunk/test/unit/repo_type_test.rb
+END
+fs_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/haven/!svn/ver/1/trunk/test/unit/fs_test.rb
+END
+plan_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/haven/!svn/ver/1/trunk/test/unit/plan_test.rb
+END
+account_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/haven/!svn/ver/1/trunk/test/unit/account_test.rb
+END

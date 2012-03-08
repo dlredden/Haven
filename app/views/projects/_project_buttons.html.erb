@@ -1,0 +1,4 @@
+<%=	button_to("New Project",
+		{:controller => 'projects', :action => 'manage'},
+		{:onclick => 'Modalbox.show("/projects/new", {width: 450, height: 400, title: "Create New Project"}); return false;'})
+%>

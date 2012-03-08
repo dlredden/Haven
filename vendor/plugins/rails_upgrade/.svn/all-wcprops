@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade/init.rb
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade/install.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade/MIT-LICENSE
+END
+uninstall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade/uninstall.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/haven/!svn/ver/4/trunk/vendor/plugins/rails_upgrade/README
+END

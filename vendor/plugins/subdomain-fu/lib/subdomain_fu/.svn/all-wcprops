@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/subdomain-fu/lib/subdomain_fu
+END
+url_rewriter.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/subdomain-fu/lib/subdomain_fu/url_rewriter.rb
+END
+routing_extensions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/subdomain-fu/lib/subdomain_fu/routing_extensions.rb
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/haven/!svn/ver/2/trunk/app/views/editor
+END
+_editor.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/haven/!svn/ver/2/trunk/app/views/editor/_editor.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/haven/!svn/ver/2/trunk/app/views/editor/index.html.erb
+END

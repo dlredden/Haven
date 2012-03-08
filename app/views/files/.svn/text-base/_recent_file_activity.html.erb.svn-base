@@ -1,0 +1,4 @@
+<label id="recent_active_files_label">Recent and Active Files</label>
+<div id="recent_files_view">
+	<%= render(:partial => "shared/yui_tree", :locals => {:tree_id => "fileactivity_tree", :data => @fa_data}) %>
+</div>

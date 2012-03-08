@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/haven/!svn/ver/1/trunk/config/WEB-INF/flex
+END
+messaging-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/haven/!svn/ver/1/trunk/config/WEB-INF/flex/messaging-config.xml
+END
+proxy-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/haven/!svn/ver/1/trunk/config/WEB-INF/flex/proxy-config.xml
+END
+data-management-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/haven/!svn/ver/1/trunk/config/WEB-INF/flex/data-management-config.xml
+END
+services-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/haven/!svn/ver/1/trunk/config/WEB-INF/flex/services-config.xml
+END
+remoting-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/haven/!svn/ver/1/trunk/config/WEB-INF/flex/remoting-config.xml
+END

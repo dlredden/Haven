@@ -1,0 +1,67 @@
+9
+
+dir
+3
+http://odeubu1.myvnc.com/svn/haven/trunk/app/services/weborb
+http://odeubu1.myvnc.com/svn/haven
+
+
+
+2010-03-30T20:28:03.019092Z
+1
+dlredden
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b66001ad-05c1-436c-bb28-3c2a7d5c64e5
+
+tests
+dir
+
+FileService.rb
+file
+
+
+
+
+2010-03-30T20:30:43.000000Z
+5e47a403bc7efd8b3cbcfa5f140c0b7f
+2010-03-30T20:28:03.019092Z
+1
+dlredden
+
+clients_controller.rb
+file
+
+
+
+
+2010-03-30T20:30:43.000000Z
+c8ad16d212638e64d2dc723068ba0734
+2010-03-30T20:28:03.019092Z
+1
+dlredden
+
+InfoService.rb
+file
+
+
+
+
+2010-03-30T20:30:43.000000Z
+df7b8fa241d259a164c5c8e6fbe091d0
+2010-03-30T20:28:03.019092Z
+1
+dlredden
+

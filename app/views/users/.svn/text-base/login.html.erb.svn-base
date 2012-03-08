@@ -1,0 +1,5 @@
+<% @page_title = 'Client Login' -%>
+
+<div id="login">
+	<%= render(:partial => "login_form") %>
+</div>

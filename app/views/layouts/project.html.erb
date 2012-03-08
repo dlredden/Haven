@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Haven Dashboard</title>
+		
+		<meta name="author" content="Wikid Labs" />
+		<meta name="copyright" content="Copyright 2010, Wikid Labs" />
+		<meta name="version" content="1.0" />
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="keywords" content="Wikid Labs, development, coding, editor, online, ruby, javascript, perl, php, rails" />
+		<meta name="description" content="Haven is an online collaborative text editor with syntax highlighting support. Haven is designed for developers who love simple text editors." />
+		<meta name="revisit-after" content="2 days" />
+		<meta name="robots" content="follow,index" />
+		
+		<link id="bespin_base" href="<%= root_path %>javascripts"/>
+		<%= stylesheet_link_tag("styles") %>
+		<!-- Combo-handled YUI CSS files: --> 
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.8.2r1/build/treeview/assets/skins/sam/treeview.css"> 
+		<!-- Combo-handled YUI JS files: --> 
+		<script type="text/javascript" src="http://yui.yahooapis.com/combo?2.8.2r1/build/yahoo-dom-event/yahoo-dom-event.js&2.8.2r1/build/animation/animation-min.js&2.8.2r1/build/json/json-min.js&2.8.2r1/build/treeview/treeview-min.js"></script> 
+		<%= javascript_include_tag("https://www.google.com/jsapi?key=#{GOOGLE_API_KEY}") %>
+		<%= javascript_include_tag("https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js") %>
+		<%= javascript_include_tag("https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js") %>
+		<%= javascript_include_tag("jquery.utils", "jquery.jeditable", "application", "BespinEmbedded") %>
+		<%= javascript_include_tag("http://js.pusherapp.com/1.5/pusher.min.js") %>
+		<script type="text/javascript" charset="utf-8">
+			var socket = new Pusher('1fbcb08884f7222908bb', '<%= @back_log_key %>');
+		</script>
+		<style>
+			<!--[if !IE 7]>
+				<style type="text/css">
+					#wrap {display:table;height:100%}
+				</style>
+			<![endif]-->
+		</style>
+	</head>
+	
+	<body onresize="setBespinSize()">
+		<div id="wrap">
+			<div id="header" class="height-offset">
+				<%= render(:partial => 'shared/dashboard_header') %>
+			</div>
+			<div id="main_dashboard">
+				<%= yield %>
+			</div>
+		</div>
+		<div id="footer" class="height-offset">
+			<%= render(:partial => 'shared/footer') %>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		window.onBespinLoad = function(){setBespinSize();};
+		ajaxLinks();
+	</script>
+</html>

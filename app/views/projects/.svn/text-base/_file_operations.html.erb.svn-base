@@ -1,0 +1,10 @@
+<div id="fileopscontainer">
+	<ul id="fileopsmenu">
+		<li>
+			<%= link_to_remote("New", :url => {:controller => "filesystems", :action => "new"}) %>
+		</li>
+		<li>
+			<%= link_to_remote("Save", :url => {:controller => "filesystems", :action => "save"}) %>
+		</li>
+	</ul>
+</div>

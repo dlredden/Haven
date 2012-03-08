@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/in_place_editing/test
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/in_place_editing/test/test_helper.rb
+END
+in_place_editing_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/haven/!svn/ver/1/trunk/vendor/plugins/in_place_editing/test/in_place_editing_test.rb
+END

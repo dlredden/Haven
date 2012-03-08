@@ -1,0 +1,9 @@
+<% @page_title = "Dashboard" -%>
+
+<div id="projects_listing">
+	<ul>
+		<% @projects.each do |project| %>
+			<li><%= link_to(project.name, :controller => "projects", :action => "show", :id => project.id) %></li>
+		<% end %>
+	</ul>
+</div>

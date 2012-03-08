@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/haven/!svn/ver/1/trunk/app/views/projects
+END
+_project.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/haven/!svn/ver/4/trunk/app/views/projects/_project.html.erb
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/haven/!svn/ver/1/trunk/app/views/projects/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/haven/!svn/ver/4/trunk/app/views/projects/index.html.erb
+END
+manage.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/haven/!svn/ver/1/trunk/app/views/projects/manage.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/haven/!svn/ver/1/trunk/app/views/projects/new.html.erb
+END
+change_project.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/haven/!svn/ver/1/trunk/app/views/projects/change_project.rjs
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/haven/!svn/ver/4/trunk/app/views/projects/show.html.erb
+END
+_file_operations.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/haven/!svn/ver/4/trunk/app/views/projects/_file_operations.html.erb
+END
+_project_buttons.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/haven/!svn/ver/1/trunk/app/views/projects/_project_buttons.html.erb
+END

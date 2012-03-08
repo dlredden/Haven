@@ -1,0 +1,40 @@
+9
+
+dir
+3
+http://odeubu1.myvnc.com/svn/haven/trunk/vendor/plugins/yaml_db/tasks
+http://odeubu1.myvnc.com/svn/haven
+
+
+
+2010-03-30T20:28:03.019092Z
+1
+dlredden
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b66001ad-05c1-436c-bb28-3c2a7d5c64e5
+
+yaml_db_tasks.rake
+file
+
+
+
+
+2010-03-30T20:30:49.000000Z
+0a4016c798441617149f8cb1a84b5dbe
+2010-03-30T20:28:03.019092Z
+1
+dlredden
+

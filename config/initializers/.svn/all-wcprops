@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/haven/!svn/ver/1/trunk/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/haven/!svn/ver/1/trunk/config/initializers/inflections.rb
+END
+new_rails_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/haven/!svn/ver/1/trunk/config/initializers/new_rails_defaults.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/haven/!svn/ver/1/trunk/config/initializers/mime_types.rb
+END
+constants.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/haven/!svn/ver/4/trunk/config/initializers/constants.rb
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/haven/!svn/ver/1/trunk/test/fixtures
+END
+accounts.yml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/haven/!svn/ver/1/trunk/test/fixtures/accounts.yml
+END
+clients.yml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/haven/!svn/ver/1/trunk/test/fixtures/clients.yml
+END
+file_types.yml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/haven/!svn/ver/4/trunk/test/fixtures/file_types.yml
+END
+filesystems.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/haven/!svn/ver/1/trunk/test/fixtures/filesystems.yml
+END
+fs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/haven/!svn/ver/1/trunk/test/fixtures/fs.yml
+END
+projects.yml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/haven/!svn/ver/1/trunk/test/fixtures/projects.yml
+END
+repo_types.yml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/haven/!svn/ver/1/trunk/test/fixtures/repo_types.yml
+END
+plan.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/haven/!svn/ver/1/trunk/test/fixtures/plan.yml
+END

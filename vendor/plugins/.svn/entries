@@ -1,0 +1,90 @@
+9
+
+dir
+4
+http://odeubu1.myvnc.com/svn/haven/trunk/vendor/plugins
+http://odeubu1.myvnc.com/svn/haven
+
+
+
+2010-11-04T01:17:27.386869Z
+4
+dlredden
+has-props
+
+svn:special svn:externals svn:needs-lock
+svn:externals
+
+
+
+
+
+
+
+
+
+
+b66001ad-05c1-436c-bb28-3c2a7d5c64e5
+
+
+
+
+
+
+0
+
+will_paginate
+dir
+
+weborb
+dir
+
+
+
+delete
+
+rails_upgrade
+dir
+
+flashobject_helper
+dir
+
+jrails
+dir
+
+newrelic_rpm
+dir
+
+
+
+delete
+
+yaml_db
+dir
+
+ezftp
+dir
+
+subdomain-fu
+dir
+
+
+
+delete
+
+classic_pagination
+dir
+
+acts_as_tree
+dir
+
+ftpzee
+dir
+
+
+
+delete
+
+in_place_editing
+dir
+

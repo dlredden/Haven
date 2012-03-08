@@ -1,0 +1,38 @@
+<div id="project_dialog" title="New Project">
+	<% form_remote_tag(:url => {:controller => "projects", :action => "new"}, :loading=>"Element.show('tree_indicator')", :complete=>"Element.hide('tree_indicator')") do %>
+		<table border="0" cellspacing="5" cellpadding="5">
+			<tr>
+				<td align="right">Project Name:</td>
+				<td><%= text_field(:project, :name) %></td>
+			</tr>
+			<tr>
+				<td align="right">Type:</td>
+				<td><%= collection_select(:apphostdev, :hosttranstype, @hosttranstypes, :value, :value) %></td>
+			</tr>
+
+			<tr>
+				<td align="right">Host Name:</td>
+				<td><%= text_field(:apphostdev, :hostname) %></td>
+			</tr>
+			<tr>
+				<td align="right">User Name:</td>
+				<td><%= text_field(:apphostdev, :user_name) %></td>
+			</tr>
+			<tr>
+				<td align="right">Password:</td>
+				<td><%= password_field(:apphostdev, :password) %></td>
+			</tr>
+			<tr>
+				<td align="right">Confirm Password:</td>
+				<td><%= password_field(:apphostdev, :password_confirmation) %></td>
+			</tr>
+			<tr>
+				<td align="right">Home Directory:</td>
+				<td><%= text_field(:apphostdev, :homedir) %></td>
+			</tr>
+			<tr>
+				<td><%= submit_tag('Create', :onclick => 'Modalbox.hide()') %></td>
+			</tr>
+		</table>
+	<% end %>
+</div>

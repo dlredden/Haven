@@ -1,0 +1,33 @@
+#projects_listing
+{
+	padding: 40px 0 0 20px;
+}
+
+#projects_listing ul
+{
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	color:#414141;
+}
+
+#projects_listing li
+{
+	padding-bottom: 5px;
+}
+
+#projects_listing li a
+{
+	text-decoration: none;
+	color:#414141;
+}
+
+#project_actions
+{
+	width: 400px;
+	background-color: #c0c0c0;
+}
+
+#project_selector
+{
+	width: 400px;
+}

@@ -1,0 +1,31 @@
+<%= error_messages_for(:user) %>
+<table>
+	<tr>
+		<td>First name</td>
+		<td><%= text_field(:user, :first_name) %></td>
+	</tr>
+	<tr>
+		<td>Last name</td>
+		<td><%= text_field(:user, :last_name) %></td>
+	</tr>
+	<tr>
+		<td>Display name</td>
+		<td><%= text_field(:user, :display_name) %></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td><%= text_field(:user, :email) %></td>
+	</tr>
+	<tr>
+		<td>Username</td>
+		<td><%= text_field(:user, :username) %></td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td><%= password_field(:user, :password) %></td>
+	</tr>
+	<tr>
+		<td>User level</td>
+		<td><%= select(:user, :user_level, (0..9).to_a.reverse) %></td>
+	</tr>
+</table>
